@@ -4407,6 +4407,18 @@ table.hover tr:nth-of-type(even):hover {
   background: url(../img/home.jpg) no-repeat 50% 0;
   background-size: cover;
   padding: 0 0 300px;
+  position: relative;
+}
+
+.ba-image:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: '';
+  background-color: grey;
+  opacity: 0.3;
 }
 
 .top-bar {
@@ -4432,13 +4444,6 @@ table.hover tr:nth-of-type(even):hover {
 
 .top-bar ul li a:hover {
   color: #f39c12;
-}
-
-@media (max-width: 639px) {
-  .top-bar .top-bar ul li a {
-    line-height: 30px;
-    text-align: center;
-  }
 }
 
 .top-bar__text {
