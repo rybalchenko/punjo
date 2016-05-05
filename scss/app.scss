@@ -1,0 +1,123 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation/foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-menu;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+
+/* Menu */
+
+.ba-image {
+	background: url(../img/home.jpg) no-repeat 50% 0;
+	background-size: cover;
+	padding: 0 0 300px;
+}
+
+.top-bar {
+	line-height: 80px;
+	opacity: 0.7;
+	background-color: #1b1b1b;
+	ul {
+		background: transparent;
+		li {
+			margin-right: 33px;
+			a {
+				font-size: 20px;
+				color: #FFF;
+				display: block;
+				line-height: 80px;
+				&:hover {
+					color: $secondary-color;
+				}
+			}
+		}
+	}
+
+	@media (max-width:639px;) {
+		.top-bar ul li a {
+			line-height: 30px;
+			text-align: center;
+		}
+	}
+	&__text {
+		margin: 160px 0 60px;
+		text-align: right;
+		&--title {
+			text-transform: uppercase;
+			font-size: 70px;
+			color: #ffffff;
+			font-weight: 700;
+		}
+		@media (max-width:840px) {
+			.top-bar__text--title {
+				font-size: 40px;
+				text-align: center;
+			}
+		}
+		span {
+			color: $secondary-color;
+			font-weight: 300;
+		}
+	}
+	&__button {
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+.top-bar__text .ba-button {
+	border: 1px solid #fff;
+	padding: 0 40px;
+	font-family: Raleway, sans-serif;
+	margin-top: 50px;
+	font-size: 20px;
+	font-weight: 700;
+	display: inline-block;
+	color: #fff;
+	min-height: 54px;
+	line-height: 54px;
+	text-transform: uppercase;
+	&--portfolio {
+		background-color: $secondary-color;
+		border: none;
+		margin-left: 10px;
+	}
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
