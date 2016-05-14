@@ -177,9 +177,27 @@
 			height: 1px;
 			margin-left: -288px;
 		}
-		&__image {
-			position: relative;
-			z-index: 3;
+	}
+	&__image {
+		position: relative;
+		z-index: 4;
+		padding: 110px 0 0;
+		h5 {
+			color: $white;
+			font-weight: 700;
+			font-size: 40px;
+		}
+		img {
+			background: $white;
+			border-radius: 30%;
+			width: 105px;
+			height: 105px;
+			padding: 25px;
+		}
+		p {
+			color: $white;
+			font-size: 25px;
+			text-transform: uppercase;
 		}
 	}
 }
